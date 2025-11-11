@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/orange_box_background"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp">
+
+    <Button
+        android:id="@+id/btnInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="הזמן לריצה"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="שם"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="התאמה: 85%"
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:paddingBottom="2dp"
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="1" />
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="עיר: תל אביב"
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:paddingBottom="2dp"
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="1" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="טלפון: 050-1234567"
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="רמה: 3"
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="זמינות: ראשון, שלישי"
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp"
+            android:paddingBottom="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

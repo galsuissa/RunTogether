@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/orange_box_background"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp">
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="אישור הזמנה"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+
+        <TextView
+            android:id="@+id/tvSenderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="שם השולח"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="רמה: מקצועי"
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="טלפון: 050-1234567"
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvInvitationDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="תאריך ושעה: 12/06/2025 19:30"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

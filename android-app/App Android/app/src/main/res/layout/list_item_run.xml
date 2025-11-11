@@ -1,0 +1,11 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textRun"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:textSize="18sp"
+    android:textColor="#000000"
+    android:background="@drawable/orange_box_background"
+    android:textDirection="rtl"
+    android:gravity="right" />

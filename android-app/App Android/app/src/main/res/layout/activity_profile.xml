@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="פרופיל אישי"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:text="מס׳ ריצות"
+                    android:textColor="#9E9E9E"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvRunsCount"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF9800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#FF9800"
+                android:layout_marginHorizontal="8dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:text="מס׳ חיבורים"
+                    android:textColor="#9E9E9E"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvPartnersCount"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF9800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:hint="שם מלא"
+            android:gravity="right"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:hint="גיל"
+            android:inputType="number"
+            android:gravity="right"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:hint="טלפון"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="right"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="right"
+            android:hint="עיר"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/etStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="right"
+            android:hint="רחוב"
+            android:textAlignment="viewStart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+            <Spinner
+                android:id="@+id/spGender"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="right|center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF9800" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+            <Spinner
+                android:id="@+id/spLevel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="right|center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF9800" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/availabilityGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="זמינות לריצה"
+                    android:textColor="#9E9E9E"
+                    android:textSize="18sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FF9800" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chMorning"
+                android:buttonTint="#FF9800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="בוקר" />
+            <CheckBox
+                android:id="@+id/chNoon"
+                android:buttonTint="#FF9800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="צהריים" />
+            <CheckBox
+                android:id="@+id/chEvening"
+                android:buttonTint="#FF9800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ערב" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF9800"
+            android:text="שמור"
+            android:textColor="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF3E0">
+
+    <TextView
+        android:id="@+id/titleHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="היסטוריית ריצות"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FF9800"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/titleStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="סטטיסטיקה ממוצעת"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FF9800"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/statsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="מהירות"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:gravity="center"
+                android:layout_marginBottom="6dp" />
+
+            <ImageView
+                android:id="@+id/iconSpeed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_speed"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textAvgSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 קמ\ש"
+                android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="מרחק"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:gravity="center"
+                android:layout_marginBottom="6dp" />
+
+            <ImageView
+                android:id="@+id/iconDistance"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_distance"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textAvgDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 ק\מ"
+                android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="דופק"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:gravity="center"
+                android:layout_marginBottom="6dp" />
+
+            <ImageView
+                android:id="@+id/iconHeartRate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_heart"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textAvgHeartRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 פעימות "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listRuns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    android:gravity="top"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="218dp"
+        android:layout_height="262dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="תמונת פרופיל"
+        android:src="@drawable/png1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="ברוך הבא!"
+        android:textColor="#FF9800"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStartRun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="התחל ריצה"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="היסטוריית ריצות"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSearchPartner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF9800"
+        android:text="חפש שותפים לריצה"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnViewInvites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="הזמנות לריצה"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnViewProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF9800"
+        android:text="פרופיל אישי"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/titleRegister"
+            android:text="הרשמה"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/editFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:hint="שם מלא"
+            android:gravity="right"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/editAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:hint="גיל"
+            android:inputType="number"
+            android:gravity="right"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:hint="טלפון"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="right"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/editCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="right"
+            android:hint="עיר"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/editStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="right"
+            android:hint="רחוב"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="right"
+            android:hint="אימייל"
+            android:inputType="textEmailAddress"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="right"
+            android:hint="סיסמה"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="right|center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF9800" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <Spinner
+                android:id="@+id/spinnerLevel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="right|center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF9800" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/availabilityGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="זמינות לריצה"
+                    android:textColor="#9E9E9E"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FF9800" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkMorning"
+                android:buttonTint="#FF9800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="בוקר" />
+
+            <CheckBox
+                android:id="@+id/checkNoon"
+                android:buttonTint="#FF9800"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="צהריים" />
+
+            <CheckBox
+                android:id="@+id/checkEvening"
+                android:buttonTint="#FF9800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ערב" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF9800"
+            android:text="הרשמה"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

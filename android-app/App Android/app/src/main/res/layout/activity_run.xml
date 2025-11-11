@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    android:gravity="top"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="218dp"
+        android:layout_height="262dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="תמונת פרופיל"
+        android:src="@drawable/png1" />
+
+    <Button
+        android:id="@+id/btnConnectWatch"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FF9800"
+        android:padding="16dp"
+        android:text="חבר שעון"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvSummaryHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="סיכום ריצה"
+        android:textColor="#FF9800"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llPhysiologicalData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/orange_box_background"
+                android:padding="8dp"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/ivSpeed"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_speed" />
+
+                <TextView
+                    android:id="@+id/tvSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="מהירות:"
+                    android:textSize="16sp"
+                    android:textColor="#FFA500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/orange_box_background"
+                android:padding="8dp"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/ivHeartRate"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_heart" />
+
+                <TextView
+                    android:id="@+id/tvHeartRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="דופק:"
+                    android:textSize="16sp"
+                    android:textColor="#FFA500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/orange_box_background"
+                android:padding="8dp"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/ivDistance"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_distance" />
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="מרחק:"
+                    android:textSize="16sp"
+                    android:textColor="#FFA500" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/orange_box_background"
+                android:padding="8dp"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/ivTime"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_time" />
+
+                <TextView
+                    android:id="@+id/tvTimeStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="זמן:"
+                    android:textSize="16sp"
+                    android:textColor="#FFA500" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="פידבק:"
+        android:textColor="#FF9800"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvRecommendations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="פידבק:"
+        android:textColor="#FF9800"
+        android:textSize="22sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnEndRun"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FF9800"
+        android:padding="16dp"
+        android:text="סיום ריצה"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

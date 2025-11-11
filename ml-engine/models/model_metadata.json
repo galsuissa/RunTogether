@@ -1,0 +1,37 @@
+{
+  "SPEED_LEAD_STEPS": 5,
+  "hr_feature_cols": [
+    "cadence",
+    "power",
+    "progress_ratio",
+    "cumulative_power_past",
+    "cumulative_hr_past",
+    "hr_lag_1",
+    "hr_lag_5",
+    "speed_lag_1",
+    "speed_lag_5",
+    "hr_ma_5_past",
+    "speed_ma_5_past",
+    "hr_trend_30_past",
+    "speed_trend_30_past",
+    "fatigue_index_past"
+  ],
+  "speed_feature_cols": [
+    "cadence",
+    "power",
+    "progress_ratio",
+    "cumulative_power_past",
+    "cumulative_hr_past",
+    "speed_lag_1",
+    "speed_lag_5",
+    "hr_lag_1",
+    "hr_lag_5",
+    "speed_ma_5_past",
+    "hr_ma_5_past",
+    "speed_trend_30_past",
+    "hr_trend_30_past",
+    "fatigue_index_past"
+  ],
+  "hr_alpha": 1.0,
+  "speed_alpha": 1.0
+}
